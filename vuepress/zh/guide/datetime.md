@@ -9,7 +9,7 @@
 日期时间格式如下：
 
 ```js
-const dateTimeFormats = {
+const datetimeFormats = {
   'en-US': {
     short: {
       year: 'numeric', month: 'short', day: 'numeric'
@@ -33,11 +33,11 @@ const dateTimeFormats = {
 
 如上，你可以定义具名的 (例如：`short`、`long` 等) 日期时间格式，并需要使用 [ECMA-402 Intl.DateTimeFormat 的选项](http://www.ecma-international.org/ecma-402/2.0/#sec-intl-datetimeformat-constructor)。
 
-之后就像语言环境信息一样，你需要指定 `VueI18n` 构造函数的 `dateTimeFormats` 选项：
+之后就像语言环境信息一样，你需要指定 `VueI18n` 构造函数的 `datetimeFormats` 选项：
 
 ```js
 const i18n = new VueI18n({
-  dateTimeFormats
+  datetimeFormats
 })
 
 new Vue({
